@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exer 9</title>
+    <script src="exer.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Add CSS -->
+    <div class="hero">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="/video.mp4" type="video/mp4" >
+      </video>
+      <nav>
+        <img src="/401-logo.png" class="logo" alt="">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">BEACHES</a></li>
+          <li><a href="#">POPULAR PLACES</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header></header>
+    <article>
+      <section class="para">
+        <p>
+          <b>
+            Write a JavaScript program to highlight the bold words of the
+            following paragraph, on mouse over a certain link.
+          </b>
+        </p>
+        <p>
+          Use the sample text below:
+        </p>
+      </section>
+      <section>
+        <p class="output">Output Here:</p>
+        <div class="content">
+                  <div class="text" id="output">
+          <!-- TODO: Add elements here if necessary -->
+          <strong>We</strong> have just started <strong>this</strong> section
+          for the users (<strong>beginner</strong> to intermediate) who
+          <strong>want</strong> to work with <strong>various</strong> JavaScript
+          <strong>problems</strong> and write scripts online to
+          <strong>test</strong> their JavaScript <strong>skill</strong>.
+          <hr />
+          <br />
+          </div>
+          <br />
+          <button onmouseover="highlightText()" onmouseout="normalText()" onclick="run()">Test</button>
+          </div>
+      </section>
+    </article>
+  </body>
+</html>
